@@ -2,7 +2,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.addColumn('Events', 'imgUrl', { type: Sequelize.Text });
+    return queryInterface.addColumn('Events', 'imgUrl', { type: Sequelize.TEXT });
   },
 
   down: (queryInterface, Sequelize) => {
