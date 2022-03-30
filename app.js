@@ -13,7 +13,9 @@ const methodOverride = require('method-override')
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(methodOverride('_method'))
+
 require('./controllers/events')(app, models);
+require('./controllers/rsvps')(app, models);
 
 
 // Use "main" as our default layout
